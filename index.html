@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TESTE DE ACESSIBILIDADE</title>
+    <link rel="stylesheet" href="src/icons/fontawesome5.9.0/css/all.css" />
+    <link rel="stylesheet" href="src/css/default.css" />
+    <link rel="stylesheet" href="src/css/asb.css" />
+  </head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>xZoom</title>
+<link type="text/css" rel="stylesheet" media="all" href="https://unpkg.com/xzoom/dist/xzoom.css" />
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/xzoom/dist/xzoom.min.js"></script>
+<script type="text/javascript">
+(function ($) {
+    $(document).ready(function() {
+
+        //Multiple Zooms on one page
+        $('.xzoom').each(function() {
+            var instance = $(this).xzoom(); //<-- Don't forget to add your options here
+            $('.xzoom-gallery', $(this).parent()).each(function () {
+                instance.xappend($(this));
+            });
+        });
+
+    });
+})(jQuery);
+</script>
+</head>
+<body>
+<div style="text-align:center;">
+    <section id="default" class="padding-top0">
+        <div class="row">
+            <div class="large-12 column">
+                <h3>Section1</h3>
+            </div>
+            <div class="large-5 column">
+                <div class="xzoom-container">
+                    <img class="xzoom" id="xzoom-default" src="gallery/preview/01_b_car.jpg" xoriginal="gallery/original/01_b_car.jpg" />
+                    <div class="xzoom-thumbs">
+                        <a href="gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/thumbs/01_b_car.jpg" xpreview="gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/02_o_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/03_r_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/04_g_car.jpg" title="The description goes here"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="large-7 column"></div>
+        </div>
+    </section>
+
+    <section id="default" class="padding-top0">
+        <div class="row">
+            <div class="large-12 column">
+                <h3>Default options</h3>
+            </div>
+            <div class="large-5 column">
+                <div class="xzoom-container">
+                    <img class="xzoom" id="xzoom-default" src="gallery/preview/01_b_car.jpg" xoriginal="gallery/original/01_b_car.jpg" />
+                    <div class="xzoom-thumbs">
+                        <a href="gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/thumbs/01_b_car.jpg" xpreview="gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/02_o_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/03_r_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/04_g_car.jpg" title="The description goes here"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="large-7 column"></div>
+        </div>
+    </section>
+
+    <section id="default" class="padding-top0">
+        <div class="row">
+            <div class="large-12 column">
+                <h3>Section2</h3>
+            </div>
+            <div class="large-5 column">
+                <div class="xzoom-container">
+                    <img class="xzoom" id="xzoom-default" src="gallery/preview/01_b_car.jpg" xoriginal="gallery/original/01_b_car.jpg" />
+                    <div class="xzoom-thumbs">
+                        <a href="gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/thumbs/01_b_car.jpg" xpreview="gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/02_o_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/03_r_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/04_g_car.jpg" title="The description goes here"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="large-7 column"></div>
+        </div>
+    </section>
+
+    <section id="default" class="padding-top0">
+        <div class="row">
+            <div class="large-12 column">
+                <h3>Default options2</h3>
+            </div>
+            <div class="large-5 column">
+                <div class="xzoom-container">
+                    <img class="xzoom" id="xzoom-default" src="gallery/preview/01_b_car.jpg" xoriginal="gallery/original/01_b_car.jpg" />
+                    <div class="xzoom-thumbs">
+                        <a href="gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/thumbs/01_b_car.jpg" xpreview="gallery/preview/01_b_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/02_o_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/03_r_car.jpg" title="The description goes here"></a>
+                        <a href="gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="gallery/preview/04_g_car.jpg" title="The description goes here"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="large-7 column"></div>
+        </div>
+    </section>
+  <body>
+
+    <article>
+      <h1>TESTE DE ACESSIBILIDADE</h1>
+      <p>
+        “Sim, isso quer dizer que você faz parte da desilusão cultural em massa de que a aparente posição do sol em relação as constelações na hora do seu nascimento afeta sua personalidade de alguma forma.”
+        <a href="javascript: void(0);">Vivamus nibh turpis</a>, A essência do costume (de dar presentes de Natal) é que agora eu tenho que sair e adquirir um presente de valor equivalente que representa o mesmo nível de amizade representado pelo presente que você me deu. Não é de estranhar que as taxas de suicídio aumentam nessa época do ano.
+      </p>
+    
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+    ></script>
+    <script type="text/javascript" src="src/js/asb.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
